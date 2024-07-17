@@ -1,0 +1,19 @@
+use("platzi_store")
+
+db.users.insertOne({
+    "email": "sule@mail.com",
+    "password": 'Azswd1151',
+    "role": "user",
+    "social_account": ["facebook", "twitter"],
+    address: {
+      strett: "156 dwddw",
+
+      city: "cali",
+      zipcode: "12666",
+    },
+    shipping_address: {
+      strett: "sdwdwdw",
+      city: "bc",
+      zipcode: "6658989",
+    }
+})

@@ -1,0 +1,23 @@
+// 66981e6ce0ac2e8ad8c179dc
+
+use("platzi_store");
+
+
+db.orders.updateOne({
+  _id: ObjectId("66981e6ce0ac2e8ad8c179dc")
+},
+  {
+    $push: {
+      items: {
+        name: 'Laptop',
+        price: 500,
+        quantity: 2,
+        product_id: ObjectId('669817342d283020e3627bba')
+    }
+    },
+    $inc: {
+      total: 500 * 2
+    }
+
+  }
+)
